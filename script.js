@@ -5,7 +5,7 @@ function hitung() {
     let tb = document.getElementById('tinggi').value;
     let bb = document.getElementById('berat').value;
 
-    let rumus = bb / Math.pow((tb / 100), 2);
+    let rumus = bb / (tb / 100) ** 2;
     let hitungBmi = (rumus.toFixed(2));
 
     let hasil = document.getElementById("statusBerat")
